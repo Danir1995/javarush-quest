@@ -1,0 +1,14 @@
+.btn{
+    background: #da1046;
+    width: 300px;
+    height: 80px;
+    border: none;
+    color: #131306;
+    border-radius: 40px;
+    transition: 0.2s;
+    font-size: 30px;
+}
+.btn:hover{
+    transform: translateY(-3px);
+    box-shadow: darkred;
+}

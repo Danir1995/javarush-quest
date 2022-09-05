@@ -1,4 +1,4 @@
-package com.javarush.quest;
+package AllLoseLogic;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

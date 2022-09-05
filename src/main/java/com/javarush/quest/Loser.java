@@ -14,10 +14,13 @@ public class Loser extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         PrintWriter printWriter = resp.getWriter();
         printWriter.println("<html>");
-        printWriter.println("Your scream has been heard, three hungry monster-dogs came to eat you.");
+        printWriter.println("<head>");
+        printWriter.println("<link href=\"style.css\" rel=\"stylesheet\">\n");
+        printWriter.println("</head>");
+        printWriter.println("<p>Your scream has been heard, three hellhounds came to eat you.<p>");
         printWriter.println("<p>YOU LOSE<p>");
         printWriter.println("<p>START AGAIN?</p>");
-        printWriter.println("  <button class=\"btn\" onclick=\"window.location='index.jsp'\">YES</button>\n");
+        printWriter.println("  <button class=\"btnBack\" onclick=\"window.location='index.jsp'\">YES</button>\n");
         printWriter.println("</html>");
     }
 }

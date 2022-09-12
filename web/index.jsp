@@ -7,27 +7,20 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-  <head>
-    <title>$JavaRush - quest$</title>
-    <link href="style.css" rel="stylesheet">
-    <h1 class="text-center"> POST-APOCALYPTIC WORLD</h1>
-  </head>
-  <body>
-
-  <p>YEAR 2053.</p>
-  <IMG class="displayed" src = "https://images.stopgame.ru/uploads/images/263287/form/normal_1365437041.jpg" width = "400" height = "256">
-  <p>Something bad happened... You woke up in the centre of your town.</p>
-  <p>Do you remember your name?</p>
-  <form>
-    <p><input name="name"></p>
-    <p><input type="submit" name="name" value="YES"></p>
-  </form>
-  <p> The sky is red and disturbing.</p>
-  <p> No one around you.</p>
-  <p> All cars are empty and destroyed...</p>
-  <p> What will you do?</p>
-  <button class="btn" onclick="window.location='/loser'">SCREAM AND CRY</button>
-  <button class="btn" onclick="window.location='/searchHelp'">GO TO SEARCH SOMEBODY ALIVE</button>
-
-  </body>
+<head>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/bootstrap.css">
+</head>
+<body>
+<h1>Start page</h1>
+<h3>some interesting story</h3>
+<form action="${pageContext.request.contextPath}/entrance" method="post">
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="username">
+    </div>
+    <div class="button">
+        <button type="submit" class="btn btn-success">Go</button>
+    </div>
+</form>
+</body>
 </html>
